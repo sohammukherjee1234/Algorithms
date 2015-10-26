@@ -11,8 +11,8 @@ void sieve(long long int n) {
     if (n >= 2)
     {
         bool arr[n];
-        //The property we assume in array is that if arr[i] = true then number i+1 is prime; else not prime
-        memset(arr, true, sizeof(arr)); //initialize all array elements to zero
+        //The property we assume in array is that if arr[i] = true then number i+1 is prime; else not prime;
+        memset(arr, true, sizeof(arr)); //initialize all array elements to true
         for (long long int i = 1; i < n; i++) { // first index i = 0 is not checked as we already know that 2 is the first prime number
             if (arr[i]) {
                 printf("%lld ", i+1);
